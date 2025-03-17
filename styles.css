@@ -1,0 +1,73 @@
+/* Basic styling for body */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+  }
+  
+  /* Calculator container styling */
+  .calculator {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+  }
+  
+  /* Display screen styling */
+  .display {
+    background: #222;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-x: auto;
+  }
+  
+  /* Button grid styling */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #ddd;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.2s;
+  }
+  
+  .btn:hover {
+    background: #f9f9f9;
+  }
+  
+  /* Operator button style */
+  .operator {
+    background: #f4f4f4;
+  }
+  
+  /* Equals button style */
+  .equals {
+    grid-column: span 4;
+    background: #4caf50;
+    color: #fff;
+  }
+  
+  /* Clear button style */
+  .clear {
+    background: #f44336;
+    color: #fff;
+  }
+  
